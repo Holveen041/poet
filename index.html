@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тема поэта и поэзии: от Античности до XXI века — А. С. Пушкин</title>
+    <meta
+      name="description"
+      content="Интерактивный школьный проект по русской литературе: тема поэта и поэзии от Античности до XXI века на примере творчества А. С. Пушкина."
+    />
+    <meta
+      property="og:title"
+      content="Тема поэта и поэзии: от Античности до XXI века — А. С. Пушкин"
+    />
+    <meta
+      property="og:description"
+      content="Интерактивный школьный проект по русской литературе: разбор стихотворений Пушкина, литературные параллели, викторина и кроссворд."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="site-header__bar">
+          <button type="button" class="brand" id="brandButton">Поэт и поэзия</button>
+
+          <nav class="main-nav" id="mainNav" aria-label="Разделы презентации"></nav>
+
+          <div class="header-mobile">
+            <span class="header-mobile__current" id="mobileCurrent"></span>
+            <button
+              type="button"
+              class="menu-button"
+              id="menuButton"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+              aria-label="Открыть меню разделов"
+            >
+              <span class="menu-button__icon" id="menuButtonIcon"></span>
+              <span>Разделы</span>
+            </button>
+          </div>
+        </div>
+
+        <nav
+          class="mobile-menu"
+          id="mobileMenu"
+          aria-label="Мобильная навигация по разделам"
+          hidden
+        >
+          <div class="mobile-menu__grid" id="mobileMenuGrid"></div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <header class="page-header">
+          <div class="breadcrumbs">
+            <span>Литературный проект</span>
+            <span aria-hidden="true">·</span>
+            <span>А. С. Пушкин</span>
+            <span aria-hidden="true">·</span>
+            <span class="breadcrumbs__section" id="breadcrumbSection">Раздел 01 из 06</span>
+          </div>
+
+          <h1 class="page-title" id="pageTitle"></h1>
+          <p class="page-subtitle" id="pageSubtitle"></p>
+        </header>
+
+        <div class="tab-panel" id="tabPanel"></div>
+        <noscript>
+          <p class="noscript-note">
+            Для интерактивных разделов (викторина и кроссворд) включите JavaScript в браузере.
+          </p>
+        </noscript>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="footer-left">
+            <button type="button" class="button-prev" id="prevButton">
+              <span class="icon icon--sm" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" /><path d="M19 12H5" /></svg>
+              </span>
+              <span>Назад</span>
+              <span class="button-prev__label" id="prevLabel"></span>
+            </button>
+
+            <span class="footer-mobile-count" id="footerMobileCount"></span>
+          </div>
+
+          <div class="footer-center">
+            <span class="footer-slide" id="footerSlide"></span>
+            <span class="footer-hint">Переключение клавишами ← и →</span>
+          </div>
+
+          <button type="button" class="button-next" id="nextButton">
+            <span>Далее</span>
+            <span class="button-next__label" id="nextLabel"></span>
+            <span class="icon icon--sm" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
